@@ -1,0 +1,38 @@
+body {
+    /* Remove a centralização global */
+    margin: 0;
+    padding: 0 20px; /* Adiciona um padding nas laterais para o texto não grudar nas bordas */
+    text-align: left; /* Garante que o texto volte a ser alinhado à esquerda (padrão) */
+}
+
+h1 {
+    /* Estilos para o título */
+    text-align: center; /* Opcional: Centraliza só o título, se desejar */
+    margin-top: 50px;
+}
+
+.image-container { /* Vamos usar uma classe para a DIV da imagem, é uma boa prática! */
+    /* Remove a centralização global no body e centraliza apenas o conteúdo desta DIV */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o conteúdo da DIV (a imagem) */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img {
+    /* Para regular o tamanho da imagem */
+    max-width: 40%; /* A imagem pode ter no máximo 90% da largura da tela */
+    height: auto; /* Mantém a proporção da imagem */
+    
+    /* Exemplo: Se quiser um tamanho máximo em pixels, use: */
+    /* max-width: 800px; */
+    /* width: auto; */ 
+}
+
+p {
+    /* Estilos para o parágrafo */
+    max-width: 800px; /* Opcional: Limita a largura do texto para melhor leitura */
+    margin-left: auto; /* Centraliza o parágrafo se você usar o max-width */
+    margin-right: auto; /* Centraliza o parágrafo se você usar o max-width */
+    line-height: 1.6;
+}
